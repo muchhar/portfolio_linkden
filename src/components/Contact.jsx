@@ -55,6 +55,7 @@ export default function Contact() {
           >
             <input type="hidden" name="_subject" value="New inquiry from bharatmuchhar.com" />
             <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://www.bharatmuchhar.com/thank-you.html" />
             <label>
               Your name
               <input type="text" name="name" required placeholder="John Trader" />

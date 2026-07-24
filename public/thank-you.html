@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="/myprofile.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Thank You — Muchhar Bharat</title>
+    <style>
+      :root {
+        --bg: #07090d;
+        --panel: #11161f;
+        --border: #222b36;
+        --text: #f5f7fa;
+        --muted: #a5b1c2;
+        --accent: #2d8cff;
+        --green: #17c964;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background-image:
+          radial-gradient(ellipse 60% 50% at 50% 0%, rgba(45, 140, 255, 0.1), transparent),
+          radial-gradient(ellipse 50% 40% at 50% 100%, rgba(23, 201, 100, 0.06), transparent);
+      }
+      .card {
+        max-width: 520px;
+        width: 100%;
+        text-align: center;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 48px 36px;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+      }
+      .check {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        margin: 0 auto 26px;
+        background: rgba(23, 201, 100, 0.14);
+        border: 1px solid rgba(23, 201, 100, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: pop 0.4s ease-out;
+      }
+      .check svg {
+        width: 36px;
+        height: 36px;
+      }
+      @keyframes pop {
+        0% {
+          transform: scale(0.6);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.7rem;
+        letter-spacing: -0.02em;
+        margin-bottom: 14px;
+      }
+      p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+      }
+      .highlight {
+        color: var(--green);
+        font-weight: 600;
+      }
+      .actions {
+        margin-top: 30px;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 0.93rem;
+        border: 1px solid transparent;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        text-decoration: none;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(45, 140, 255, 0.4);
+      }
+      .btn-ghost {
+        border-color: var(--border);
+        color: var(--text);
+      }
+      .btn-ghost:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .note {
+        margin-top: 26px;
+        font-size: 0.85rem;
+        color: var(--muted);
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#17c964" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6 9 17l-5-5" />
+        </svg>
+      </div>
+      <h1>Thank you — message received!</h1>
+      <p>
+        Thanks for reaching out. I&apos;ll review your project and get back to
+        you <span class="highlight">within 12 hours</span>.
+      </p>
+      <p>
+        For anything urgent, feel free to email me directly at
+        <br />
+        <a href="mailto:muchharbharat10@gmail.com" style="color: var(--accent)">muchharbharat10@gmail.com</a>.
+      </p>
+      <div class="actions">
+        <a href="/" class="btn btn-primary">← Back to Home</a>
+        <a
+          href="https://www.linkedin.com/in/muchhar-bharat-277191190"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost"
+          >Connect on LinkedIn</a
+        >
+      </div>
+      <div class="note">— Muchhar Bharat · Algorithmic Trading Developer</div>
+    </div>
+  </body>
+</html>
